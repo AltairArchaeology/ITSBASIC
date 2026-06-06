@@ -12,8 +12,10 @@ Build Date: JUN 06 2026
 
 3. Installation. To install the contents of itsbasicdistro.tap onto ITS, first run ITS from SIMH. Once ITS is running, access SIMH from the terminal by typing pdp, and then press CTRL+E to pause SIMH. Attach the .tap by typing in attach mta0 <path to the .tap image>/itsbasicdistro.tap. For example: attach mta0 /home/pidp-10/BASIC/itsbasicdistro.tap. Once attached, type cont to resume SIMH. Once logged into ITS, type in :DUMP. Upon the _ prompt appearing, type in DUMP. When prompted for FILES= type in *; * * to place all files from the .tap onto the appropriate directories. Once this is complete, type in QUIT (before this you can type in REWIND to rewind the tape, or UNLOAD to detach it from SIMH). You can now access BASIC by typing in :BASIC. 
 
-4. Operation. The following describes the commands available in the TOPS-10 BASIC Interpreter, and describes how they were patched to work with ITS, if applicable. These commands will all work with the first three letters as abbreviations. For example, CAT will work the same as typing CATALOG. For full operating instructions, please review the DECsystem-10 BASIC Conversational Language Manual published in March of 1974.   
+4. Operation. The following describes the commands available in the TOPS-10 BASIC Interpreter, and describes how they were patched to work with ITS, if applicable. These commands will all work with the first three letters as abbreviations. For example, CAT will work the same as typing CATALOG. For full operating instructions, please review the DECsystem-10 BASIC Conversational Language Manual published in March of 1974.
+   
 | Command | Abbrev. | Purpose |
+|---|---|---|
 | HELP | HLP | Display BASIC help |
 | NEW | NEW | Start a new program |
 | SCRATCH | SCR | Clear the current program from core |
